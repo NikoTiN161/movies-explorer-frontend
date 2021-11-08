@@ -1,0 +1,20 @@
+.header {
+  min-height: 74px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: 44px;
+  display: block;
+  background-image: url(../../images/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-width: 38px;
+  min-height: 38px;
+}
+
+.header_main-page {
+  background-color:#073042;
+}

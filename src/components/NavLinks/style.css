@@ -1,0 +1,22 @@
+.nav-links {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.nav-links__link {
+  display: inline-block;
+  margin-left: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.nav-links__link:first-of-type {
+  margin-left: 0;
+}
+
+.nav-links__link-accent {}
