@@ -6,16 +6,18 @@ import './style.css';
 function Header(props) {
   const location = useLocation();
   return (
-    <header className={`header ${location.pathname === '/' && 'header_main-page' } ${props.className}`}>
+    <header className={`header ${location.pathname === '/' && 'header_main-page'} ${props.className}`}>
       <Link to="/" className="header__logo" />
-      <NavLinks className="header__links"
-        links={
-          [
-            { name: "Фильмы", url: "/movies" },
-            { name: "Сохранённые фильмы", url: "/saved-movies" },
-          ]
-        }
-      />
+      <nav className="header__links">
+        <NavLinks className="header__links-movies"
+          links={
+            [
+              { name: "Фильмы", url: "/movies" },
+              { name: "Сохранённые фильмы", url: "/saved-movies" },
+            ]
+          }
+        />
+      </nav>
     </header>
   );
 }
