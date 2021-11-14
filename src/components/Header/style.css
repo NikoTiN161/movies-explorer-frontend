@@ -5,6 +5,10 @@
   align-items: center;
 }
 
+.header_main-page {
+  background-color: #073042;
+}
+
 .header__logo {
   margin-right: 44px;
   display: block;
@@ -15,6 +19,44 @@
   min-height: 38px;
 }
 
-.header_main-page {
-  background-color:#073042;
+.header__links-movies {}
+
+.header__links-movies_hidden {
+  visibility: hidden;
 }
+
+.header__links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  text-decoration: none;
+}
+
+.header__links-profile {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+.header__links-profile_profile {
+  padding: 8px 20px;
+  font-size: 14px;
+  background-color: #313131;
+  border-radius: 20px;
+}
+
+.header__links-profile_signin {
+  padding: 8px 20px;
+  margin-left: 30px;
+  background: #3DDC84;
+  border-radius: 3px;
+  color: black;
+}
+
+.header__links-profile_signup {}
