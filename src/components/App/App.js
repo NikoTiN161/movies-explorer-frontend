@@ -6,9 +6,12 @@ import Header from '../Header';
 import Main from '../Main';
 import Movies from '../Movies';
 import Footer from '../Footer';
+import SavedMovies from '../SavedMovies';
+import Profile from '../Profile';
+import Register from '../Register';
 
 function App() {
-  let loggedIn = true;
+  let loggedIn = false;
   return (
     <CurrentUserContext.Provider value={{ loggedIn }}>
       <Header className="page__header" />
@@ -19,28 +22,30 @@ function App() {
             title="Вход"
             buttonText="Войти"
           />
-        </Route>
+        </Route> */}
         <Route path="/signup">
           <Register
             // onRegister={onRegister}
-            title="Регистрация"
+            title="Добро пожаловать!"
             buttonText="Зарегистрироваться"
           />
-        </Route> */}
+        </Route>
 
-
+        <ProtectedRoute
+          path="/profile"
+          component={Profile}
+          className="page__profile"
+        />
         <ProtectedRoute
           path="/movies"
           component={Movies}
           className="page__movies"
         />
-        
-        {/*
         <ProtectedRoute
-        path="/saved-movies"
-        component={SavedMovies}
-        className="page__saved-movies"
-      /> */}
+          path="/saved-movies"
+          component={SavedMovies}
+          className="page__saved-movies"
+        />
         <Route path="/">
           <Main className="page__main" />
         </Route>

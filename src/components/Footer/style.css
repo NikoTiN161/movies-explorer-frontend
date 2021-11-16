@@ -2,6 +2,10 @@
   margin-top: 79px;
 }
 
+.footer__hide {
+  display: none;
+}
+
 .footer__title {
   font-style: normal;
   font-weight: normal;

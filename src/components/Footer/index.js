@@ -1,11 +1,15 @@
 import React from 'react';
+import { useLocation } from 'react-router';
 import NavLinks from '../NavLinks';
 import SectionTitle from '../SectionTitle';
 import './style.css';
 
+
 function Footer(props) {
+  const location = useLocation();
+
   return (
-    <footer className={`footer ${props.className}`}>
+    <footer className={`footer ${props.className} ${location.pathname === '/profile' && 'footer__hide'}`}>
       <SectionTitle className="footer__title" text="Учебный проект Яндекс.Практикум х BeatFilm." />
       <div className="footer__row">
         <p className="footer__copyright">&copy; 2021</p>

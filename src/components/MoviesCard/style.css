@@ -41,9 +41,16 @@
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
-.card__like-button_liked {}
+.card__like-button_liked {
+  background-image: url(../../images/saved.svg);
+}
+
+.card__like-button_saved-movies {
+  background-image: url(../../images/d9.svg);
+}
 
 .card__image {
   display: block;

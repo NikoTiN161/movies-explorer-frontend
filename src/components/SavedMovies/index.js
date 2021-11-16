@@ -1,23 +1,23 @@
 import React from 'react';
 import MoviesCardList from '../MoviesCardList';
-import Preloader from '../Preloader';
-import SearchForm from '../SearchForm';
 import './style.css';
 import { movies } from '../../utils/constants';
+import SearchForm from '../SearchForm';
 import AddMore from '../AddMore';
 
 
-function Movies(props) {
+function SavedMovies(props) {
+
+  const savedMovies = [movies[1], movies[3], movies[5], movies[7],];
 
   return (
     <main className={`movies ${props.className}`}>
       <SearchForm className="movies__search" />
-      {/* <Preloader /> */}
       <MoviesCardList
-      cards={movies} />
+      cards={savedMovies} />
       <AddMore />
     </main>
   );
 }
 
-export default Movies;
+export default SavedMovies;
