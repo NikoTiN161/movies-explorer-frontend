@@ -9,6 +9,10 @@
   background-color: #073042;
 }
 
+.header_with-form {
+  max-width: 396px;
+}
+
 .header__logo {
   margin-right: 44px;
   display: block;
@@ -42,6 +46,10 @@
   line-height: 16px;
   color: white;
   text-decoration: none;
+}
+
+.header__links-profile_hide {
+  display: none;
 }
 
 .header__links-profile_profile {

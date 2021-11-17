@@ -1,20 +1,16 @@
 import React from 'react';
-import './style.css';
-import Form from '../Form';
 import { Link } from 'react-router-dom';
+import Form from '../Form';
+import './style.css';
 
-function Register(props) {
+function Login(props) {
   return (
-    <section className="register">
+    <section className="login">
       <Form
-        className="register__form"
-        title="Добро пожаловать!"
-        buttonText="Зарегистрироваться"
+        className="login__form"
+        title={props.title}
+        buttonText={props.buttonText}
       >
-        <label className="form__label register__label-input register__label-input_name">
-          Имя
-          <input type="text" id="input_name" className="form__input register__input register__input_name" />
-        </label>
         <label className="form__label register__label-input register__label-input_email">
           E-mail
           <input type="email" id="input_email" className="form__input register__input register__input_email" />
@@ -25,11 +21,11 @@ function Register(props) {
         </label>
         <span className="register__error"></span>
       </Form>
-      <p className="register__link-login">Уже зарегистрированы?
-        <Link to="/signin" className="register__link">Войти</Link>
+      <p className="register__link-login">Ещё не зарегистрированы?
+        <Link to="/signup" className="register__link">Регистрация</Link>
       </p>
     </section>
   );
 }
 
-export default Register;
+export default Login;

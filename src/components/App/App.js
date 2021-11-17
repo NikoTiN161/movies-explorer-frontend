@@ -9,6 +9,7 @@ import Footer from '../Footer';
 import SavedMovies from '../SavedMovies';
 import Profile from '../Profile';
 import Register from '../Register';
+import Login from '../Login';
 
 function App() {
   let loggedIn = false;
@@ -16,13 +17,13 @@ function App() {
     <CurrentUserContext.Provider value={{ loggedIn }}>
       <Header className="page__header" />
       <Switch>
-        {/* <Route path="/signin">
+        <Route path="/signin">
           <Login
             // onLogin={onLogin}
-            title="Вход"
+            title="Рады видеть!"
             buttonText="Войти"
           />
-        </Route> */}
+        </Route>
         <Route path="/signup">
           <Register
             // onRegister={onRegister}

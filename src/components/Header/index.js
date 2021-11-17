@@ -10,8 +10,11 @@ function Header(props) {
 
   const value = React.useContext(CurrentUserContext);
 
+  let visible = location.pathname === '/signup' || location.pathname === '/signin';
+  let width = location.pathname === '/signup' || location.pathname === '/signin'? 'header_with-form' : '';
+
   return (
-    <header className={`header ${location.pathname === '/' && 'header_main-page'} ${props.className}`}>
+    <header className={`header ${location.pathname === '/' && 'header_main-page'} ${width} ${props.className}`}>
       <Link to="/" className="header__logo" />
       <nav className="header__links">
         <NavLinks className={`header__links-movies ${value.loggedIn ? '' : 'header__links-movies_hidden'}`}
@@ -22,7 +25,7 @@ function Header(props) {
             ]
           }
         />
-        <div className="header__links-profile">
+        <div className={`header__links-profile ${visible && 'header__links-profile_hide'}`}>
           {value.loggedIn ? <Link to={"/profile"} className="header__links-profile header__links-profile_profile">Аккаунт</Link>
             : <>
               <Link to={"/signup"} className="header__links-profile header__links-profile_signup">Регистрация</Link>
