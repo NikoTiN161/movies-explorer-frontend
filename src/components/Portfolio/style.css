@@ -25,18 +25,33 @@
   letter-spacing: -0.04em;
   border-top: 1px solid #424242;
 }
+
 .portfolio__link:first-child {
   padding-top: 0;
   border-top: none;
 }
+
 .portfolio__link:last-child {
   padding-bottom: 0;
 }
-
 
 .portfolio__link-accent {
   position: absolute;
   right: 0;
   font-size: 30px;
   line-height: 60px;
+}
+
+@media (max-width:768px) {
+  .portfolio__link {
+    font-size: 28px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width:425px) {
+  .portfolio__link {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }

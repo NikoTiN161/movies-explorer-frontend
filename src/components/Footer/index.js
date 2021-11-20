@@ -11,7 +11,7 @@ function Footer(props) {
   let visible = location.pathname === '/profile' || location.pathname === '/signup' || location.pathname === '/signin';
 
   return (
-    <footer className={`footer ${props.className} ${visible && 'footer__hide'}`}>
+    <footer className={`footer ${props.className} ${visible && 'footer__hide'} ${props.isPageNotFound && 'footer__hide'}`}>
       <SectionTitle className="footer__title" text="Учебный проект Яндекс.Практикум х BeatFilm." />
       <div className="footer__row">
         <p className="footer__copyright">&copy; 2021</p>

@@ -22,8 +22,28 @@
 
 .techs__stack {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 90px);
-  grid-template-rows: repeat(auto-fit, 60px);
-  column-gap: 10px;
   justify-content: center;
+  grid-template-columns: repeat(auto-fit, 90px);
+  grid-auto-rows: 60px;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+@media (max-width:768px) {
+  .techs__stack {
+    grid-template-columns: repeat(auto-fit, 84px);
+    grid-auto-rows: 57px;
+  }
+}
+
+@media (max-width:425px) {
+  .techs__card-title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .techs__card-text {
+    font-size: 11px;
+    line-height: 16px;
+  }
 }

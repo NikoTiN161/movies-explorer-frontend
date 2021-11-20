@@ -1,5 +1,5 @@
 .page {
-  margin: 0 auto; 
+  margin: 0 auto;
   background-color: #202020;
   color: #fff;
   font-family: Inter, Arial, sans-serif;
@@ -19,7 +19,13 @@
 }
 
 @media (max-width:768px) {
-  .page {
-    padding: 0 50px;
+  .page__header {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width:425px) {
+  .page__header {
+    padding: 0 14px;
   }
 }

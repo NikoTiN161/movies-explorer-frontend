@@ -1,6 +1,4 @@
-.info-card {
-  
-}
+.info-card {}
 
 .info-card__title {
   margin: 0;
@@ -24,5 +22,15 @@
   .info-card__text {
     font-size: 12px;
     line-height: 18px;
+  }
+
+  .info-card__title {
+    margin-bottom: 22px;
+  }
+}
+
+@media (max-width:425px) {
+  .info-card__title {
+    margin-bottom: 16px;
   }
 }

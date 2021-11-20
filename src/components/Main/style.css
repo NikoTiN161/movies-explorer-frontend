@@ -1,24 +1,78 @@
-.main {
-}
+.main {}
 
 .main__promo {
   padding-left: 70px;
   padding-right: 70px;
 }
+
 .main__about {
   padding-left: 70px;
   padding-right: 70px;
 }
+
 .main__techs {
   padding-left: 70px;
   padding-right: 70px;
 }
+
 .main__about-me {
   padding-left: 70px;
   padding-right: 70px;
-
 }
+
 .main__portfolio {
   padding-left: 70px;
   padding-right: 70px;
+}
+
+@media (max-width:768px) {
+  .main__promo {
+    padding: 0 30px;
+  }
+
+  .main__about {
+    padding: 0 50px;
+  }
+
+  .main__techs {
+    padding: 0 50px;
+  }
+
+  .main__about-me {
+    padding: 0 50px;
+  }
+
+  .main__portfolio {
+    padding: 0 50px;
+  }
+
+  .main__portfolio {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width:425px) {
+  .main__promo {
+    padding: 0 10px;
+  }
+
+  .main__about {
+    padding: 0 18px;
+  }
+
+  .main__techs {
+    padding: 0 18px;
+  }
+
+  .main__about-me {
+    padding: 0 14px;
+  }
+
+  .main__portfolio {
+    padding: 0 14px;
+  }
+
+  .main__portfolio {
+    padding: 0 14px;
+  }
 }

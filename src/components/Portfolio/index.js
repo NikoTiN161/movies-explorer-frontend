@@ -17,7 +17,6 @@ function Portfolio(props) {
           { name: "Адаптивный сайт", url: "https://nikotin161.github.io/russian-travel/" },
           { name: "Одностраничное приложение", url: "https://nikotin161.github.io/russian-travel/" },
         ]} />
-
     </section>
   );
 }
