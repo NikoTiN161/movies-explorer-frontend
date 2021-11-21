@@ -5,6 +5,17 @@
   flex-direction: column;
 }
 
+.form__logo {
+  margin: 70px 0 40px;
+  align-self: flex-start;
+  display: block;
+  background-image: url(../../images/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-width: 38px;
+  min-height: 38px;
+}
+
 .form__header {
   font-style: normal;
   font-weight: 500;

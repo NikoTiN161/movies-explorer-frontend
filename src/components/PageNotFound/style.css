@@ -32,5 +32,21 @@
   line-height: 17px;
   text-decoration: none;
   color: #4285F4;
+}
 
+@media (max-width:425px) {
+  .not-found-page__title {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .not-found-page__number {
+    font-size: 80px;
+    line-height: 97px;
+  }
+
+  .not-found-page__link-back {
+    font-size: 12px;
+    line-height: 15px;
+  }
 }

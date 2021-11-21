@@ -13,15 +13,15 @@ function Register(props) {
       >
         <label className="form__label register__label-input register__label-input_name">
           Имя
-          <input type="text" id="input_name" className="form__input register__input register__input_name" />
+          <input type="text" required id="input_name" className="form__input register__input register__input_name" />
         </label>
         <label className="form__label register__label-input register__label-input_email">
           E-mail
-          <input type="email" id="input_email" className="form__input register__input register__input_email" />
+          <input type="email" required id="input_email" className="form__input register__input register__input_email" />
         </label>
         <label className="form__label register__label-input register__label-input_password">
           Пароль
-          <input type="password" id="input_password" className="form__input register__input register__input_password" />
+          <input type="password" required id="input_password" className="form__input register__input register__input_password" />
         </label>
         <span className="register__error"></span>
       </Form>

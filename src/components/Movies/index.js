@@ -1,8 +1,8 @@
 import React from 'react';
+import './style.css';
 import MoviesCardList from '../MoviesCardList';
 import Preloader from '../Preloader';
 import SearchForm from '../SearchForm';
-import './style.css';
 import { movies } from '../../utils/constants';
 import AddMore from '../AddMore';
 

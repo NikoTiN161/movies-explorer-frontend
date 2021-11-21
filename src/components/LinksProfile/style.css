@@ -1,0 +1,38 @@
+.links-profile {
+  display: flex;
+  align-items: center;
+}
+
+.links-profile__profile {
+  padding: 8px 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: #313131;
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.links-profile__signin {
+  padding: 8px 20px;
+  margin-left: 30px;
+  background: #3DDC84;
+  border-radius: 3px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: black;
+  text-decoration: none;
+}
+
+.links-profile__signup {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: white;
+  text-decoration: none;
+}

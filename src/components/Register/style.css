@@ -1,4 +1,5 @@
 .register {
+  margin: 0 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,4 +18,16 @@
   margin-left: 6px;
   text-decoration: none;
   color: #4285F4;
+}
+
+@media (max-width:768px) {
+  .register {
+    margin: 0 50px;
+  }
+}
+
+@media (max-width:425px) {
+  .register {
+    margin: 0 14px;
+  }
 }

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Route, Switch } from 'react-router';
 import './App.css';
 import CurrentUserContext from '../../contexts/CurrentUserContext';
@@ -12,19 +12,44 @@ import Profile from '../Profile';
 import Register from '../Register';
 import Login from '../Login';
 import PageNotFound from '../PageNotFound';
+import Menu from '../Menu';
 
 function App() {
   let loggedIn = true;
 
-  const [ isPageNotFound, setPageNotFound ] = useState(false);
+  const [isPageNotFound, setPageNotFound] = useState(false);
+  const [isTabletScreen, setIsTabletScreen] = useState(false);
+  const [isVisibilityMenu, setIsVisibilityMenu] = useState(false);
+
+
+  useEffect(() => {
+    const mediaWatcher = window.matchMedia("(max-width: 768px)")
+    setIsTabletScreen(mediaWatcher.matches);
+
+    //watch for updates
+    function updateScreen(e) {
+      setIsTabletScreen(e.matches);
+    }
+    mediaWatcher.addEventListener('change', updateScreen)
+
+    // clean up after ourselves
+    return function cleanup() {
+      mediaWatcher.removeEventListener('change', updateScreen)
+    }
+  }, []);
 
   function setPageNotFoundTrue() {
     setPageNotFound(true);
   }
 
+  function clickMenuButton() {
+    setIsVisibilityMenu(!isVisibilityMenu);
+  }
+
   return (
     <CurrentUserContext.Provider value={{ loggedIn }}>
-      <Header className="page__header" isPageNotFound={isPageNotFound} />
+      <Header className="page__header" isTabletScreen={isTabletScreen} isPageNotFound={isPageNotFound}
+        onClickMenuButton={clickMenuButton} isVisibilityMenu={isVisibilityMenu} />
       <Switch>
         <Route exact path="/">
           <Main className="page__main" />
@@ -51,7 +76,7 @@ function App() {
         <ProtectedRoute
           path="/movies"
           component={Movies}
-          className="page__movies"
+          className=""
         />
         <ProtectedRoute
           path="/saved-movies"
@@ -64,6 +89,7 @@ function App() {
         </Route>
       </Switch>
       <Footer className="page__footer" isPageNotFound={isPageNotFound} />
+      <Menu visibility={isVisibilityMenu} />
     </CurrentUserContext.Provider>
   );
 }

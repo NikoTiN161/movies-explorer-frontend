@@ -1,5 +1,5 @@
 .profile {
-  margin: 74px auto 70px;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,4 +72,10 @@
 
 .profile__button_exit {
   color: #EE3465;
+}
+
+@media (max-width:768px) {
+  .profile{
+    margin: 0 30px;
+  }
 }

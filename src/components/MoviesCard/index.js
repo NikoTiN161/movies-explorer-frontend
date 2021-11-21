@@ -8,10 +8,10 @@ import { useLocation } from 'react-router';
 function MoviesCard(props) {
   const value = React.useContext(CurrentUserContext);
   const location = useLocation();
-  const { click, setClick } = useState(false);
+  const [ click, setClick ] = useState(false);
 
   function handleLikeClick() {
-    setClick(true);
+    setClick(!click);
   }
 
   return (

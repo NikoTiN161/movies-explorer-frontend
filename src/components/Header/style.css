@@ -44,42 +44,22 @@
 .header__links_logged-in {
   justify-content: space-between;
 }
-.header__links-profile {
-  display: flex;
-  align-items: center;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  color: white;
-  text-decoration: none;
-}
 
-.header__links-profile_hide {
-  display: none;
+.header_tablet-screen {
+  justify-content: space-between;
 }
-
-.header__links-profile_profile {
-  padding: 8px 20px;
-  font-size: 14px;
-  background-color: #313131;
-  border-radius: 20px;
-}
-
-.header__links-profile_signin {
-  padding: 8px 20px;
-  margin-left: 30px;
-  background: #3DDC84;
-  border-radius: 3px;
-  color: black;
-}
-
-.header__links-profile_signup {}
 
 .header__burger-menu {
   width: 44px;
   height: 44px;
   background-image: url(../../images/burger-menu.svg);
   background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 100%;
   border: none;
+  z-index: 3;
+}
+
+.header__burger-menu_close {
+  background-image: url(../../images/close-menu.svg);
 }
