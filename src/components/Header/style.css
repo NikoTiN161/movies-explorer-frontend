@@ -1,0 +1,71 @@
+.header {
+  min-height: 74px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.header_hide {
+  display: none;
+}
+
+.header_main-page {
+  background-color: #073042;
+}
+
+.header_with-form {
+  max-width: 396px;
+}
+
+.header__logo {
+  display: block;
+  background-image: url(../../images/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-width: 38px;
+  min-height: 38px;
+}
+
+.header__links-movies {}
+
+.header__links-movies_active {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.header__links-movies_hidden {
+  display: none;
+}
+
+.header__links {
+  margin-left: 44px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  text-decoration: none;
+}
+
+.header__links_logged-in {
+  justify-content: space-between;
+}
+
+.header_tablet-screen {
+  justify-content: space-between;
+}
+
+.header__burger-menu {
+  width: 44px;
+  height: 44px;
+  background-image: url(../../images/burger-menu.svg);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: none;
+  z-index: 3;
+}
+
+.header__burger-menu_close {
+  background-image: url(../../images/close-menu.svg);
+}

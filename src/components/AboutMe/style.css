@@ -1,0 +1,112 @@
+.about-me {
+  margin-top: 110px;
+}
+
+.about-me__about {
+  margin-top: 66px;
+  margin-bottom: 100px;
+  display: grid;
+  justify-content: space-between;
+  grid-template-areas: "name avatar""subtitle avatar""bio avatar""links avatar";
+  column-gap: 24%;
+}
+
+.about-me__name {
+  margin: 0;
+  grid-area: name;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 58px;
+  letter-spacing: -0.04em;
+}
+
+.about-me__subtitle {
+  margin: 0;
+  margin-top: 18px;
+  grid-area: subtitle;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.about-me__bio {
+  margin: 0;
+  margin-top: 26px;
+  max-width: 600px;
+  grid-area: bio;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.about-me__links {
+  margin-top: 99px;
+  grid-area: links;
+}
+
+.about-me__avatar {
+  grid-area: avatar;
+  border-radius: 11px;
+}
+
+@media (max-width:768px) {
+  .about-me__about {
+    column-gap: 50px;
+  }
+
+  .about-me__name {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .about-me__subtitle {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .about-me__bio {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .about-me__avatar {
+    max-width: 255px;
+  }
+}
+
+@media (max-width:600px) {
+  .about-me__about {
+    grid-template-areas: "avatar""name""subtitle""bio""links";
+  }
+}
+
+@media (max-width:425px) {
+  .about-me__avatar {
+    max-width: 292px;
+    justify-self: center;
+  }
+
+  .about-me__name {
+    margin-top: 40px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .about-me__subtitle {
+    margin-top: 20px;
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .about-me__bio {
+    margin-top: 20px;
+    font-size: 11px;
+    line-height: 16px;
+  }
+  .about-me__links {
+    margin-top: 40px;
+  }
+}

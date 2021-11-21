@@ -1,0 +1,70 @@
+.card {
+  background: #222222;
+  max-height: 271px;
+  overflow: hidden;
+}
+
+.card__info {
+  padding: 14px;
+  display: grid;
+  justify-content: space-between;
+  grid-template-areas: 'title like' 'duration like';
+}
+
+.card__title {
+  grid-area: title;
+  margin: 0;
+  margin-bottom: 9px;
+  margin-right: 26px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.card__duration {
+  grid-area: duration;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  color: #8B8B8B;
+}
+
+.card__like-button {
+  grid-area: like;
+  width: 30px;
+  background-image: url(../../images/dislike.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+.card__like-button:hover {
+opacity: 0.8;
+}
+
+.card__like-button_liked {
+  background-image: url(../../images/saved.svg);
+}
+
+.card__like-button_saved-movies {
+  background-image: url(../../images/d9.svg);
+}
+.card__like-button_saved-movies:hover {
+  opacity: 0.8;
+}
+
+
+.card__image {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
