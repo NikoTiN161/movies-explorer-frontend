@@ -42,6 +42,10 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+.card__like-button:hover {
+opacity: 0.8;
 }
 
 .card__like-button_liked {
@@ -51,6 +55,10 @@
 .card__like-button_saved-movies {
   background-image: url(../../images/d9.svg);
 }
+.card__like-button_saved-movies:hover {
+  opacity: 0.8;
+}
+
 
 .card__image {
   display: block;

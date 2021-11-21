@@ -27,6 +27,7 @@ function Header(props) {
           <>
             <nav className={`header__links ${value.loggedIn ? 'header__links_logged-in' : ''}`}>
               <NavLinks className={`header__links-movies ${value.loggedIn ? '' : 'header__links-movies_hidden'}`}
+              activeClassName="header__links-movies_active"
                 links={
                   [
                     { name: "Фильмы", url: "/movies" },

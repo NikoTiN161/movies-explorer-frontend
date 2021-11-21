@@ -13,6 +13,11 @@
   border-radius: 20px;
   color: white;
   text-decoration: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.links-profile__profile:hover {
+  opacity: 0.7;
 }
 
 .links-profile__signin {
@@ -26,6 +31,11 @@
   line-height: 16px;
   color: black;
   text-decoration: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.links-profile__signin:hover {
+  opacity: 0.7;
 }
 
 .links-profile__signup {
@@ -35,4 +45,9 @@
   line-height: 16px;
   color: white;
   text-decoration: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.links-profile__signup:hover {
+  opacity: 0.7;
 }

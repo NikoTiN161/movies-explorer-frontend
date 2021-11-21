@@ -36,6 +36,10 @@
   outline: none;
 }
 
+.search__input:focus {
+  border-bottom: 1px solid #424242;
+}
+
 .search__button {
   padding: 0;
   min-width: 34px;
@@ -45,7 +49,14 @@
   background-size: cover;
   background-color: #2F2F2F;
   border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
 }
+
+.search__button:hover {
+  opacity: 0.8;
+}
+
 
 .search__delimiter {
   margin: 0 30px;

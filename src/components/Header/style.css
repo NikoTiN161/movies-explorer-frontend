@@ -28,6 +28,12 @@
 
 .header__links-movies {}
 
+.header__links-movies_active {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+}
+
 .header__links-movies_hidden {
   display: none;
 }
