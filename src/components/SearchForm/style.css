@@ -118,7 +118,7 @@
   background-color: #2BE080;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 600px) {
   .search {
     padding: 80px 0 109px;
   }
