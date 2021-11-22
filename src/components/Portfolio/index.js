@@ -13,9 +13,9 @@ function Portfolio(props) {
         classNameAccent="portfolio__link-accent"
         accent="↗"
         links={[
-          { name: "Статичный сайт", url: "https://nikotin161.github.io/russian-travel/" },
-          { name: "Адаптивный сайт", url: "https://nikotin161.github.io/russian-travel/" },
-          { name: "Одностраничное приложение", url: "https://nikotin161.github.io/russian-travel/" },
+          { name: "Статичный сайт", url: "https://nikotin161.github.io/russian-travel/", external:true },
+          { name: "Адаптивный сайт", url: "https://nikotin161.github.io/russian-travel/", external:true },
+          { name: "Одностраничное приложение", url: "https://nikotin161.github.io/russian-travel/", external:true },
         ]} />
     </section>
   );

@@ -1,4 +1,16 @@
-export const urlApi = 'https://api.nomoreparties.co';
+export const optionsMoviesApi = {
+  baseUrl: 'https://api.nomoreparties.co',
+    headers: {
+        'Content-Type': 'application/json'
+    }
+}
+
+export const optionsMainApi = {
+  baseUrl: 'http://movies.nomoredomains.rocks/api',
+    headers: {
+        'Content-Type': 'application/json'
+    }
+}
 
 export const movies = [
   {

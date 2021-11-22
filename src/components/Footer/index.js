@@ -19,9 +19,9 @@ function Footer(props) {
           className="footer__links"
           classNameLink="footer__link"
           links={[
-            { name: "Яндекс.Практикум", url: "https://practicum.yandex.ru/" },
-            { name: "Github", url: "https://github.com/NikoTiN161" },
-            { name: "VK", url: "https://vk.com/id13530998"  },
+            { name: "Яндекс.Практикум", url: "https://practicum.yandex.ru/", external:true },
+            { name: "Github", url: "https://github.com/NikoTiN161", external:true },
+            { name: "VK", url: "https://vk.com/id13530998", external:true },
           ]} />
       </div>
     </footer>

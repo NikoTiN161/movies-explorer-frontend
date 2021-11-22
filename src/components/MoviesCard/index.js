@@ -1,17 +1,25 @@
 import React, { useState } from 'react';
 import CurrentUserContext from '../../contexts/CurrentUserContext';
 import './style.css';
-import { urlApi } from '../../utils/constants';
-import { useLocation } from 'react-router';
+import { optionsMoviesApi } from '../../utils/constants';
+import { Redirect, useHistory, useLocation } from 'react-router';
+import { Link } from 'react-router-dom';
 
 
 function MoviesCard(props) {
   const value = React.useContext(CurrentUserContext);
+  const history = useHistory();
   const location = useLocation();
-  const [ click, setClick ] = useState(false);
+  const [click, setClick] = useState(false);
 
   function handleLikeClick() {
     setClick(!click);
+  }
+
+  function handleClickImage() {
+    // <Link to={props.card.trailerLink} />
+
+    // props.card.trailerLink
   }
 
   return (
@@ -25,7 +33,9 @@ function MoviesCard(props) {
 
         </button>
       </div>
-      <img src={urlApi + props.card.image.url} alt={props.card.nameRU} className="card__image" />
+      <Link to={{pathname: props.card.trailerLink} } target="_blank" >
+        <img src={optionsMoviesApi.baseUrl + props.card.image.url} alt={props.card.nameRU} className="card__image" />
+      </Link>
     </li>
   );
 }

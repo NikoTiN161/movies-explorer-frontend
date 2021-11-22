@@ -16,8 +16,8 @@ function AboutMe(props) {
         <NavLinks className="about-me__links"
           links={
             [
-              { name: "VK", url: "https://vk.com/id13530998" },
-              { name: "Github", url: "https://github.com/NikoTiN161" },
+              { name: "VK", url: "https://vk.com/id13530998", external:true },
+              { name: "Github", url: "https://github.com/NikoTiN161", external:true },
             ]
           } />
         <img src={avatar} alt="фотография студента" className="about-me__avatar" />

@@ -44,6 +44,14 @@
   color: white;
 }
 
+.form__input-error {
+
+}
+
+.form__input-error_active {
+  
+}
+
 .form__button {
   margin-top: 68px;
   padding: 15px 0;

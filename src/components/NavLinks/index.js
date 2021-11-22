@@ -8,9 +8,20 @@ function NavLinks(props) {
     <nav className={`nav-links ${props.className}`}>
       {props.links.map((link, index) => {
         return (
-          <NavLink key={index} exact to={link.url} className={`nav-links__link ${classNameLink}`} activeClassName={activeClassName}>
-            {link.name}<span className={`nav-links__link-accent ${classNameAccent}`}>{accent}</span>
-          </NavLink>
+            link.external ?
+              (
+                <NavLink key={index} exact to={{ pathname: link.url }}
+                  className={`nav-links__link ${classNameLink}`} activeClassName={activeClassName} target="_blank" >
+                  {link.name}<span className={`nav-links__link-accent ${classNameAccent}`}>{accent}</span>
+                </NavLink>
+              )
+              :
+              (
+                <NavLink key={index} exact to={link.url}
+                  className={`nav-links__link ${classNameLink}`} activeClassName={activeClassName} >
+                  {link.name}<span className={`nav-links__link-accent ${classNameAccent}`}>{accent}</span>
+                </NavLink>
+              )
         )
       })}
     </nav>
